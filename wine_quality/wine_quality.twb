@@ -1,0 +1,3100 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0103.1153                               -->
+<workbook original-version='18.1' source-build='2025.1.0 (20251.25.0103.1153)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='winequality-red' inline='true' name='federated.11sbph814vsaig178s7qs14bdmjo' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='winequality-red' name='textscan.1l59kor13jacsy16iclbw19h76wg'>
+            <connection class='textscan' directory='C:/Users/Rafas/Desktop/repositorios/python/cientista_dados/wine_quality' filename='winequality-red.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1l59kor13jacsy16iclbw19h76wg' name='winequality-red.csv' table='[winequality-red#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='fixed acidity' ordinal='0' />
+            <column datatype='real' name='volatile acidity' ordinal='1' />
+            <column datatype='real' name='citric acid' ordinal='2' />
+            <column datatype='real' name='residual sugar' ordinal='3' />
+            <column datatype='real' name='chlorides' ordinal='4' />
+            <column datatype='real' name='free sulfur dioxide' ordinal='5' />
+            <column datatype='real' name='total sulfur dioxide' ordinal='6' />
+            <column datatype='real' name='density' ordinal='7' />
+            <column datatype='real' name='pH' ordinal='8' />
+            <column datatype='real' name='sulphates' ordinal='9' />
+            <column datatype='real' name='alcohol' ordinal='10' />
+            <column datatype='string' name='quality' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[winequality-red.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fixed acidity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fixed acidity]</local-name>
+            <parent-name>[winequality-red.csv]</parent-name>
+            <remote-alias>fixed acidity</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[winequality-red.csv_CC056F90FD43413EA3FAD07242A1D2D6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>volatile acidity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[volatile acidity]</local-name>
+            <parent-name>[winequality-red.csv]</parent-name>
+            <remote-alias>volatile acidity</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[winequality-red.csv_CC056F90FD43413EA3FAD07242A1D2D6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>citric acid</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[citric acid]</local-name>
+            <parent-name>[winequality-red.csv]</parent-name>
+            <remote-alias>citric acid</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[winequality-red.csv_CC056F90FD43413EA3FAD07242A1D2D6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>residual sugar</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[residual sugar]</local-name>
+            <parent-name>[winequality-red.csv]</parent-name>
+            <remote-alias>residual sugar</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[winequality-red.csv_CC056F90FD43413EA3FAD07242A1D2D6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>chlorides</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[chlorides]</local-name>
+            <parent-name>[winequality-red.csv]</parent-name>
+            <remote-alias>chlorides</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[winequality-red.csv_CC056F90FD43413EA3FAD07242A1D2D6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>free sulfur dioxide</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[free sulfur dioxide]</local-name>
+            <parent-name>[winequality-red.csv]</parent-name>
+            <remote-alias>free sulfur dioxide</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[winequality-red.csv_CC056F90FD43413EA3FAD07242A1D2D6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total sulfur dioxide</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total sulfur dioxide]</local-name>
+            <parent-name>[winequality-red.csv]</parent-name>
+            <remote-alias>total sulfur dioxide</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[winequality-red.csv_CC056F90FD43413EA3FAD07242A1D2D6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>density</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[density]</local-name>
+            <parent-name>[winequality-red.csv]</parent-name>
+            <remote-alias>density</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[winequality-red.csv_CC056F90FD43413EA3FAD07242A1D2D6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pH</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pH]</local-name>
+            <parent-name>[winequality-red.csv]</parent-name>
+            <remote-alias>pH</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[winequality-red.csv_CC056F90FD43413EA3FAD07242A1D2D6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sulphates</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sulphates]</local-name>
+            <parent-name>[winequality-red.csv]</parent-name>
+            <remote-alias>sulphates</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[winequality-red.csv_CC056F90FD43413EA3FAD07242A1D2D6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>alcohol</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[alcohol]</local-name>
+            <parent-name>[winequality-red.csv]</parent-name>
+            <remote-alias>alcohol</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[winequality-red.csv_CC056F90FD43413EA3FAD07242A1D2D6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>quality</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[quality]</local-name>
+            <parent-name>[winequality-red.csv]</parent-name>
+            <remote-alias>quality</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[winequality-red.csv_CC056F90FD43413EA3FAD07242A1D2D6]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' datatype='integer' name='[Alcohol (compartimento)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='-1' formula='[alcohol]' peg='0' size='0.467' />
+      </column>
+      <column caption='1' datatype='integer' name='[Calculation_1214001614381146112]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[Chlorides (compartimento)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='-2' formula='[chlorides]' peg='0' size='0.0318' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[Citric Acid (compartimento)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='-2' formula='[citric acid]' peg='0' size='0.067' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[Density (compartimento)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='-4' formula='[density]' peg='0' size='0.00052' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[Fixed Acidity (compartimento)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='-1' formula='[fixed acidity]' peg='0' size='0.7' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[Free Sulfur Dioxide (compartimento)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[free sulfur dioxide]' peg='0' size='5.26' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[P H (compartimento)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='-2' formula='[pH]' peg='0' size='0.081' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[Residual Sugar (compartimento)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='-1' formula='[residual sugar]' peg='0' size='0.93' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[Sulphates (compartimento)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='-1' formula='[sulphates]' peg='0' size='0.104' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[Total Sulfur Dioxide (compartimento)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='1' formula='[total sulfur dioxide]' peg='0' size='15.3' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[Volatile Acidity (compartimento)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='-2' formula='[volatile acidity]' peg='0' size='0.079' />
+      </column>
+      <column caption='winequality-red.csv' datatype='table' name='[__tableau_internal_object_id__].[winequality-red.csv_CC056F90FD43413EA3FAD07242A1D2D6]' role='measure' type='quantitative' />
+      <column caption='Alcohol' datatype='real' name='[alcohol]' role='measure' type='quantitative' />
+      <column caption='Chlorides' datatype='real' name='[chlorides]' role='measure' type='quantitative' />
+      <column caption='Citric Acid' datatype='real' name='[citric acid]' role='measure' type='quantitative' />
+      <column caption='Density' datatype='real' name='[density]' role='measure' type='quantitative' />
+      <column caption='Fixed Acidity' datatype='real' name='[fixed acidity]' role='measure' type='quantitative' />
+      <column caption='Free Sulfur Dioxide' datatype='real' name='[free sulfur dioxide]' role='measure' type='quantitative' />
+      <column caption='P H' datatype='real' name='[pH]' role='measure' type='quantitative' />
+      <column caption='Quality' datatype='string' name='[quality]' role='dimension' type='nominal' />
+      <column caption='Residual Sugar' datatype='real' name='[residual sugar]' role='measure' type='quantitative' />
+      <column caption='Sulphates' datatype='real' name='[sulphates]' role='measure' type='quantitative' />
+      <column caption='Total Sulfur Dioxide' datatype='real' name='[total sulfur dioxide]' role='measure' type='quantitative' />
+      <column caption='Volatile Acidity' datatype='real' name='[volatile acidity]' role='measure' type='quantitative' />
+      <column-instance column='[alcohol]' derivation='Count' name='[pcto:cnt:alcohol:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[chlorides]' derivation='Count' name='[pcto:cnt:chlorides:qk:6]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Table' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[chlorides]' derivation='Count' name='[pcto:cnt:chlorides:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <group caption='Ação (Quality)' hidden='true' name='[Action (Quality)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[quality]' />
+        </groupfilter>
+      </group>
+      <folders-common>
+        <folder name='Bins'>
+          <folder-item name='[Alcohol (compartimento)]' type='field' />
+          <folder-item name='[Chlorides (compartimento)]' type='field' />
+          <folder-item name='[Citric Acid (compartimento)]' type='field' />
+          <folder-item name='[Density (compartimento)]' type='field' />
+          <folder-item name='[Fixed Acidity (compartimento)]' type='field' />
+          <folder-item name='[Free Sulfur Dioxide (compartimento)]' type='field' />
+          <folder-item name='[P H (compartimento)]' type='field' />
+          <folder-item name='[Residual Sugar (compartimento)]' type='field' />
+          <folder-item name='[Sulphates (compartimento)]' type='field' />
+          <folder-item name='[Total Sulfur Dioxide (compartimento)]' type='field' />
+        </folder>
+        <folder name='Support'>
+          <folder-item name='[Calculation_1214001614381146112]' type='field' />
+        </folder>
+        <folder name='Variables'>
+          <folder-item name='[alcohol]' type='field' />
+          <folder-item name='[chlorides]' type='field' />
+          <folder-item name='[citric acid]' type='field' />
+          <folder-item name='[density]' type='field' />
+          <folder-item name='[fixed acidity]' type='field' />
+          <folder-item name='[free sulfur dioxide]' type='field' />
+          <folder-item name='[pH]' type='field' />
+          <folder-item name='[quality]' type='field' />
+          <folder-item name='[residual sugar]' type='field' />
+          <folder-item name='[sulphates]' type='field' />
+          <folder-item name='[total sulfur dioxide]' type='field' />
+          <folder-item name='[volatile acidity]' type='field' />
+        </folder>
+      </folders-common>
+      <layout common-percentage='1' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='false' user-set-layout-v2='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.11sbph814vsaig178s7qs14bdmjo].[pcto:cnt:alcohol:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.11sbph814vsaig178s7qs14bdmjo].[pcto:cnt:chlorides:qk:6]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.11sbph814vsaig178s7qs14bdmjo].[pcto:cnt:chlorides:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Brasil&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='winequality-red.csv' id='winequality-red.csv_CC056F90FD43413EA3FAD07242A1D2D6'>
+            <properties context=''>
+              <relation connection='textscan.1l59kor13jacsy16iclbw19h76wg' name='winequality-red.csv' table='[winequality-red#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='real' name='fixed acidity' ordinal='0' />
+                  <column datatype='real' name='volatile acidity' ordinal='1' />
+                  <column datatype='real' name='citric acid' ordinal='2' />
+                  <column datatype='real' name='residual sugar' ordinal='3' />
+                  <column datatype='real' name='chlorides' ordinal='4' />
+                  <column datatype='real' name='free sulfur dioxide' ordinal='5' />
+                  <column datatype='real' name='total sulfur dioxide' ordinal='6' />
+                  <column datatype='real' name='density' ordinal='7' />
+                  <column datatype='real' name='pH' ordinal='8' />
+                  <column datatype='real' name='sulphates' ordinal='9' />
+                  <column datatype='real' name='alcohol' ordinal='10' />
+                  <column datatype='string' name='quality' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filtro 1 (gerado)' name='[Action1_6118131718894998B307D2D39CD0AEEB]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Painel 1' type='sheet' worksheet='Quality' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Painel 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Alcohol Density Plot'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='winequality-red' name='federated.11sbph814vsaig178s7qs14bdmjo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11sbph814vsaig178s7qs14bdmjo'>
+            <column aggregation='None' datatype='integer' name='[Alcohol (compartimento)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='-1' formula='[alcohol]' peg='0' size='0.467' />
+            </column>
+            <column caption='Alcohol' datatype='real' name='[alcohol]' role='measure' type='quantitative' />
+            <column-instance column='[Alcohol (compartimento)]' derivation='None' name='[none:Alcohol (compartimento):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[alcohol]' derivation='Count' name='[pcto:cnt:alcohol:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Quality' datatype='string' name='[quality]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11sbph814vsaig178s7qs14bdmjo].[Action (Quality)]'>
+            <groupfilter function='level-members' level='[quality]' user:ui-action-filter='[Action1_6118131718894998B307D2D39CD0AEEB]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.11sbph814vsaig178s7qs14bdmjo].[Action (Quality)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.11sbph814vsaig178s7qs14bdmjo].[pcto:cnt:alcohol:qk]' scope='rows' value='false' />
+            <format attr='title' class='0' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Alcohol (compartimento):qk]' scope='cols' value='Alcohol' />
+            <format attr='height' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Alcohol (compartimento):qk]' value='36' />
+            <format attr='display' class='0' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Alcohol (compartimento):qk]' scope='cols' value='true' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Alcohol (compartimento):qk]' value='8' />
+            <format attr='color' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Alcohol (compartimento):qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='stroke-size' id='refline0' value='1' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dashed' />
+            <format attr='stroke-color' id='refline0' value='#ff0000' />
+            <format attr='font-size' id='refline0' value='8' />
+            <format attr='color' id='refline0' value='#000000' />
+            <format attr='text-format' id='refline0' value='n#,##0.00;-#,##0.00' />
+            <format attr='fill-above' id='refline2' value='#00000000' />
+            <format attr='fill-below' id='refline2' value='#00000000' />
+            <format attr='stroke-size' id='refline2' value='1' />
+            <format attr='line-visibility' id='refline2' value='on' />
+            <format attr='line-pattern-only' id='refline2' value='dashed' />
+            <format attr='stroke-color' id='refline2' value='#ff0000' />
+            <format attr='font-size' id='refline2' value='8' />
+            <format attr='color' id='refline2' value='#000000' />
+            <format attr='text-align' id='refline2' value='left' />
+            <format attr='text-format' id='refline2' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575' fontsize='8'>Bins:&#9;</run>
+                <run bold='true' fontsize='8'><![CDATA[<[federated.11sbph814vsaig178s7qs14bdmjo].[none:Alcohol (compartimento):qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575' fontsize='8'>%:&#9;</run>
+                <run bold='true' fontsize='8'><![CDATA[<[federated.11sbph814vsaig178s7qs14bdmjo].[pcto:cnt:alcohol:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.11sbph814vsaig178s7qs14bdmjo].[pcto:cnt:alcohol:qk]</rows>
+        <cols>[federated.11sbph814vsaig178s7qs14bdmjo].[none:Alcohol (compartimento):qk]</cols>
+        <show-full-range>
+          <column>[federated.11sbph814vsaig178s7qs14bdmjo].[Alcohol (compartimento)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{B61E2759-F9F0-405C-B9A2-1AFAB139EB25}' />
+    </worksheet>
+    <worksheet name='Chlorides Density Plot'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='winequality-red' name='federated.11sbph814vsaig178s7qs14bdmjo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11sbph814vsaig178s7qs14bdmjo'>
+            <column aggregation='None' datatype='integer' name='[Chlorides (compartimento)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='-2' formula='[chlorides]' peg='0' size='0.0318' />
+            </column>
+            <column caption='Chlorides' datatype='real' name='[chlorides]' role='measure' type='quantitative' />
+            <column-instance column='[Chlorides (compartimento)]' derivation='None' name='[none:Chlorides (compartimento):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[chlorides]' derivation='Count' name='[pcto:cnt:chlorides:qk:6]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Table' type='PctTotal' />
+            </column-instance>
+            <column caption='Quality' datatype='string' name='[quality]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11sbph814vsaig178s7qs14bdmjo].[Action (Quality)]'>
+            <groupfilter function='level-members' level='[quality]' user:ui-action-filter='[Action1_6118131718894998B307D2D39CD0AEEB]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.11sbph814vsaig178s7qs14bdmjo].[Action (Quality)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Chlorides (compartimento):qk]' scope='cols' value='Chlorides' />
+            <format attr='height' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Chlorides (compartimento):qk]' value='36' />
+            <format attr='display' class='0' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Chlorides (compartimento):qk]' scope='cols' value='true' />
+            <format attr='display' class='0' field='[federated.11sbph814vsaig178s7qs14bdmjo].[pcto:cnt:chlorides:qk:6]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Chlorides (compartimento):qk]' value='8' />
+            <format attr='color' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Chlorides (compartimento):qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline2' value='#00000000' />
+            <format attr='fill-below' id='refline2' value='#00000000' />
+            <format attr='stroke-size' id='refline2' value='1' />
+            <format attr='line-visibility' id='refline2' value='on' />
+            <format attr='line-pattern-only' id='refline2' value='dashed' />
+            <format attr='stroke-color' id='refline2' value='#ff0000' />
+            <format attr='text-format' id='refline2' value='n#,##0.00;-#,##0.00' />
+            <format attr='font-size' id='refline2' value='8' />
+            <format attr='color' id='refline2' value='#000000' />
+            <format attr='text-align' id='refline2' value='left' />
+            <format attr='font-size' id='refline0' value='8' />
+            <format attr='color' id='refline0' value='#000000' />
+            <format attr='text-format' id='refline0' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='refband'>
+            <format attr='fill-color' id='refline1' value='#00000000' />
+            <format attr='stroke-size' id='refline1' value='1' />
+            <format attr='line-visibility' id='refline1' value='on' />
+            <format attr='line-pattern-only' id='refline1' value='solid' />
+            <format attr='fill-color' id='refline0' value='#00000000' />
+            <format attr='stroke-size' id='refline0' value='1' />
+            <format attr='line-visibility' id='refline0' value='on' />
+            <format attr='line-pattern-only' id='refline0' value='dashed' />
+            <format attr='stroke-color' id='refline0' value='#ff0000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#757575' fontsize='8'>Bins:&#9;</run>
+                <run bold='true' fontsize='8'><![CDATA[<[federated.11sbph814vsaig178s7qs14bdmjo].[none:Chlorides (compartimento):qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#757575' fontsize='8'>%:&#9;</run>
+                <run bold='true' fontsize='8'><![CDATA[<[federated.11sbph814vsaig178s7qs14bdmjo].[pcto:cnt:chlorides:qk:6]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.11sbph814vsaig178s7qs14bdmjo].[pcto:cnt:chlorides:qk:6]</rows>
+        <cols>[federated.11sbph814vsaig178s7qs14bdmjo].[none:Chlorides (compartimento):qk]</cols>
+        <show-full-range>
+          <column>[federated.11sbph814vsaig178s7qs14bdmjo].[Chlorides (compartimento)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{88F2C072-3D66-4B81-93F8-FC2A33FB9CA3}' />
+    </worksheet>
+    <worksheet name='Citric Acid Density Plot'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='winequality-red' name='federated.11sbph814vsaig178s7qs14bdmjo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11sbph814vsaig178s7qs14bdmjo'>
+            <column aggregation='None' datatype='integer' name='[Citric Acid (compartimento)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='-2' formula='[citric acid]' peg='0' size='0.067' />
+            </column>
+            <column caption='Citric Acid' datatype='real' name='[citric acid]' role='measure' type='quantitative' />
+            <column-instance column='[Citric Acid (compartimento)]' derivation='None' name='[none:Citric Acid (compartimento):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[citric acid]' derivation='Count' name='[pcto:cnt:citric acid:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Quality' datatype='string' name='[quality]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11sbph814vsaig178s7qs14bdmjo].[Action (Quality)]'>
+            <groupfilter function='level-members' level='[quality]' user:ui-action-filter='[Action1_6118131718894998B307D2D39CD0AEEB]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.11sbph814vsaig178s7qs14bdmjo].[Action (Quality)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.11sbph814vsaig178s7qs14bdmjo].[pcto:cnt:citric acid:qk]' scope='rows' value='false' />
+            <format attr='title' class='0' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Citric Acid (compartimento):qk]' scope='cols' value='Citric Acid' />
+            <format attr='height' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Citric Acid (compartimento):qk]' value='36' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Citric Acid (compartimento):qk]' value='8' />
+            <format attr='color' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Citric Acid (compartimento):qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+          </pane>
+        </panes>
+        <rows>[federated.11sbph814vsaig178s7qs14bdmjo].[pcto:cnt:citric acid:qk]</rows>
+        <cols>[federated.11sbph814vsaig178s7qs14bdmjo].[none:Citric Acid (compartimento):qk]</cols>
+        <show-full-range>
+          <column>[federated.11sbph814vsaig178s7qs14bdmjo].[Citric Acid (compartimento)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{6E3ADE06-AD4F-41E1-AF9B-7997D52D0CE9}' />
+    </worksheet>
+    <worksheet name='Density Density Plot'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='winequality-red' name='federated.11sbph814vsaig178s7qs14bdmjo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11sbph814vsaig178s7qs14bdmjo'>
+            <column aggregation='None' datatype='integer' name='[Density (compartimento)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='-4' formula='[density]' peg='0' size='0.00052' />
+            </column>
+            <column caption='Density' datatype='real' name='[density]' role='measure' type='quantitative' />
+            <column-instance column='[Density (compartimento)]' derivation='None' name='[none:Density (compartimento):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[density]' derivation='Count' name='[pcto:cnt:density:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Quality' datatype='string' name='[quality]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11sbph814vsaig178s7qs14bdmjo].[Action (Quality)]'>
+            <groupfilter function='level-members' level='[quality]' user:ui-action-filter='[Action1_6118131718894998B307D2D39CD0AEEB]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.11sbph814vsaig178s7qs14bdmjo].[Action (Quality)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Density (compartimento):qk]' scope='cols' value='Density' />
+            <format attr='display' class='0' field='[federated.11sbph814vsaig178s7qs14bdmjo].[pcto:cnt:density:qk]' scope='rows' value='false' />
+            <format attr='height' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Density (compartimento):qk]' value='36' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Density (compartimento):qk]' value='8' />
+            <format attr='color' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Density (compartimento):qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+          </pane>
+        </panes>
+        <rows>[federated.11sbph814vsaig178s7qs14bdmjo].[pcto:cnt:density:qk]</rows>
+        <cols>[federated.11sbph814vsaig178s7qs14bdmjo].[none:Density (compartimento):qk]</cols>
+        <show-full-range>
+          <column>[federated.11sbph814vsaig178s7qs14bdmjo].[Density (compartimento)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{40FE7594-5774-4E38-BA21-D905C907B26E}' />
+    </worksheet>
+    <worksheet name='Fixed Acidity Density Plot'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='winequality-red' name='federated.11sbph814vsaig178s7qs14bdmjo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11sbph814vsaig178s7qs14bdmjo'>
+            <column aggregation='None' datatype='integer' name='[Fixed Acidity (compartimento)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='-1' formula='[fixed acidity]' peg='0' size='0.7' />
+            </column>
+            <column caption='Fixed Acidity' datatype='real' name='[fixed acidity]' role='measure' type='quantitative' />
+            <column-instance column='[Fixed Acidity (compartimento)]' derivation='None' name='[none:Fixed Acidity (compartimento):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[fixed acidity]' derivation='Count' name='[pcto:cnt:fixed acidity:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Quality' datatype='string' name='[quality]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11sbph814vsaig178s7qs14bdmjo].[Action (Quality)]'>
+            <groupfilter function='level-members' level='[quality]' user:ui-action-filter='[Action1_6118131718894998B307D2D39CD0AEEB]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.11sbph814vsaig178s7qs14bdmjo].[Action (Quality)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.11sbph814vsaig178s7qs14bdmjo].[pcto:cnt:fixed acidity:qk]' scope='rows' value='false' />
+            <format attr='title' class='0' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Fixed Acidity (compartimento):qk]' scope='cols' value='Fixed Acidity' />
+            <format attr='height' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Fixed Acidity (compartimento):qk]' value='39' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Fixed Acidity (compartimento):qk]' value='8' />
+            <format attr='color' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Fixed Acidity (compartimento):qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+          </pane>
+        </panes>
+        <rows>[federated.11sbph814vsaig178s7qs14bdmjo].[pcto:cnt:fixed acidity:qk]</rows>
+        <cols>[federated.11sbph814vsaig178s7qs14bdmjo].[none:Fixed Acidity (compartimento):qk]</cols>
+        <show-full-range>
+          <column>[federated.11sbph814vsaig178s7qs14bdmjo].[Fixed Acidity (compartimento)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{786C9166-7D8C-49B2-B176-63CB85A93A3A}' />
+    </worksheet>
+    <worksheet name='Free Sulfur Dioxide Acidity Density Plot'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='winequality-red' name='federated.11sbph814vsaig178s7qs14bdmjo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11sbph814vsaig178s7qs14bdmjo'>
+            <column aggregation='None' datatype='integer' name='[Free Sulfur Dioxide (compartimento)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[free sulfur dioxide]' peg='0' size='5.26' />
+            </column>
+            <column caption='Free Sulfur Dioxide' datatype='real' name='[free sulfur dioxide]' role='measure' type='quantitative' />
+            <column-instance column='[Free Sulfur Dioxide (compartimento)]' derivation='None' name='[none:Free Sulfur Dioxide (compartimento):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[free sulfur dioxide]' derivation='Count' name='[pcto:cnt:free sulfur dioxide:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Quality' datatype='string' name='[quality]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11sbph814vsaig178s7qs14bdmjo].[Action (Quality)]'>
+            <groupfilter function='level-members' level='[quality]' user:ui-action-filter='[Action1_6118131718894998B307D2D39CD0AEEB]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.11sbph814vsaig178s7qs14bdmjo].[Action (Quality)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.11sbph814vsaig178s7qs14bdmjo].[pcto:cnt:free sulfur dioxide:qk]' scope='rows' value='false' />
+            <format attr='title' class='0' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Free Sulfur Dioxide (compartimento):qk]' scope='cols' value='Free Sulfur Dioxide' />
+            <format attr='height' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Free Sulfur Dioxide (compartimento):qk]' value='39' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Free Sulfur Dioxide (compartimento):qk]' value='8' />
+            <format attr='color' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Free Sulfur Dioxide (compartimento):qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+          </pane>
+        </panes>
+        <rows>[federated.11sbph814vsaig178s7qs14bdmjo].[pcto:cnt:free sulfur dioxide:qk]</rows>
+        <cols>[federated.11sbph814vsaig178s7qs14bdmjo].[none:Free Sulfur Dioxide (compartimento):qk]</cols>
+        <show-full-range>
+          <column>[federated.11sbph814vsaig178s7qs14bdmjo].[Free Sulfur Dioxide (compartimento)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{32CF9414-3D4F-4BDB-B3DB-BB8690A149EE}' />
+    </worksheet>
+    <worksheet name='PH Density Plot'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='winequality-red' name='federated.11sbph814vsaig178s7qs14bdmjo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11sbph814vsaig178s7qs14bdmjo'>
+            <column aggregation='None' datatype='integer' name='[P H (compartimento)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='-2' formula='[pH]' peg='0' size='0.081' />
+            </column>
+            <column-instance column='[P H (compartimento)]' derivation='None' name='[none:P H (compartimento):qk]' pivot='key' type='quantitative' />
+            <column caption='P H' datatype='real' name='[pH]' role='measure' type='quantitative' />
+            <column-instance column='[pH]' derivation='Count' name='[pcto:cnt:pH:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Quality' datatype='string' name='[quality]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11sbph814vsaig178s7qs14bdmjo].[Action (Quality)]'>
+            <groupfilter function='level-members' level='[quality]' user:ui-action-filter='[Action1_6118131718894998B307D2D39CD0AEEB]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.11sbph814vsaig178s7qs14bdmjo].[Action (Quality)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.11sbph814vsaig178s7qs14bdmjo].[pcto:cnt:pH:qk]' scope='rows' value='false' />
+            <format attr='title' class='0' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:P H (compartimento):qk]' scope='cols' value='P H' />
+            <format attr='height' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:P H (compartimento):qk]' value='39' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:P H (compartimento):qk]' value='8' />
+            <format attr='color' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:P H (compartimento):qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+          </pane>
+        </panes>
+        <rows>[federated.11sbph814vsaig178s7qs14bdmjo].[pcto:cnt:pH:qk]</rows>
+        <cols>[federated.11sbph814vsaig178s7qs14bdmjo].[none:P H (compartimento):qk]</cols>
+        <show-full-range>
+          <column>[federated.11sbph814vsaig178s7qs14bdmjo].[P H (compartimento)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{4DB15E87-D689-4834-8A8B-C126DD5BF94C}' />
+    </worksheet>
+    <worksheet name='Planilha 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='winequality-red' name='federated.11sbph814vsaig178s7qs14bdmjo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11sbph814vsaig178s7qs14bdmjo'>
+            <column caption='Alcohol' datatype='real' name='[alcohol]' role='measure' type='quantitative' />
+            <column-instance column='[alcohol]' derivation='None' name='[none:alcohol:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[quality]' derivation='None' name='[none:quality:nk]' pivot='key' type='nominal' />
+            <column caption='Quality' datatype='string' name='[quality]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <reference-line axis-column='[federated.11sbph814vsaig178s7qs14bdmjo].[none:alcohol:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.11sbph814vsaig178s7qs14bdmjo].[none:alcohol:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.88955801725387573' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.11sbph814vsaig178s7qs14bdmjo].[none:quality:nk]</rows>
+        <cols>[federated.11sbph814vsaig178s7qs14bdmjo].[none:alcohol:qk]</cols>
+      </table>
+      <simple-id uuid='{69294108-55F5-4191-B6C6-C2F6CC418A54}' />
+    </worksheet>
+    <worksheet name='Quality'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='winequality-red' name='federated.11sbph814vsaig178s7qs14bdmjo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11sbph814vsaig178s7qs14bdmjo'>
+            <column-instance column='[quality]' derivation='None' name='[none:quality:nk]' pivot='key' type='nominal' />
+            <column-instance column='[quality]' derivation='Count' name='[pcto:cnt:quality:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Quality' datatype='string' name='[quality]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.11sbph814vsaig178s7qs14bdmjo].[pcto:cnt:quality:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:quality:nk]' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.11sbph814vsaig178s7qs14bdmjo].[none:quality:nk]' />
+              <text column='[federated.11sbph814vsaig178s7qs14bdmjo].[pcto:cnt:quality:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='8'>&lt;</run>
+                <run fontsize='8'>[federated.11sbph814vsaig178s7qs14bdmjo].[pcto:cnt:quality:qk]</run>
+                <run fontsize='8'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.11sbph814vsaig178s7qs14bdmjo].[pcto:cnt:quality:qk]</rows>
+        <cols>[federated.11sbph814vsaig178s7qs14bdmjo].[none:quality:nk]</cols>
+      </table>
+      <simple-id uuid='{03CE0692-0BBC-487B-A003-A5598838FB41}' />
+    </worksheet>
+    <worksheet name='Residual Sugar Density Plot'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='winequality-red' name='federated.11sbph814vsaig178s7qs14bdmjo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11sbph814vsaig178s7qs14bdmjo'>
+            <column aggregation='None' datatype='integer' name='[Residual Sugar (compartimento)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='-1' formula='[residual sugar]' peg='0' size='0.93' />
+            </column>
+            <column-instance column='[Residual Sugar (compartimento)]' derivation='None' name='[none:Residual Sugar (compartimento):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[residual sugar]' derivation='Count' name='[pcto:cnt:residual sugar:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Quality' datatype='string' name='[quality]' role='dimension' type='nominal' />
+            <column caption='Residual Sugar' datatype='real' name='[residual sugar]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11sbph814vsaig178s7qs14bdmjo].[Action (Quality)]'>
+            <groupfilter function='level-members' level='[quality]' user:ui-action-filter='[Action1_6118131718894998B307D2D39CD0AEEB]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.11sbph814vsaig178s7qs14bdmjo].[Action (Quality)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.11sbph814vsaig178s7qs14bdmjo].[pcto:cnt:residual sugar:qk]' scope='rows' value='false' />
+            <format attr='title' class='0' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Residual Sugar (compartimento):qk]' scope='cols' value='Residual Sugar' />
+            <format attr='height' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Residual Sugar (compartimento):qk]' value='39' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Residual Sugar (compartimento):qk]' value='8' />
+            <format attr='color' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Residual Sugar (compartimento):qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+          </pane>
+        </panes>
+        <rows>[federated.11sbph814vsaig178s7qs14bdmjo].[pcto:cnt:residual sugar:qk]</rows>
+        <cols>[federated.11sbph814vsaig178s7qs14bdmjo].[none:Residual Sugar (compartimento):qk]</cols>
+        <show-full-range>
+          <column>[federated.11sbph814vsaig178s7qs14bdmjo].[Residual Sugar (compartimento)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{3F294BFD-5CAC-4255-903D-FD1E776A57C5}' />
+    </worksheet>
+    <worksheet name='Sulphates Density Plot'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='winequality-red' name='federated.11sbph814vsaig178s7qs14bdmjo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11sbph814vsaig178s7qs14bdmjo'>
+            <column aggregation='None' datatype='integer' name='[Sulphates (compartimento)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='-1' formula='[sulphates]' peg='0' size='0.104' />
+            </column>
+            <column-instance column='[Sulphates (compartimento)]' derivation='None' name='[none:Sulphates (compartimento):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[sulphates]' derivation='Count' name='[pcto:cnt:sulphates:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Quality' datatype='string' name='[quality]' role='dimension' type='nominal' />
+            <column caption='Sulphates' datatype='real' name='[sulphates]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11sbph814vsaig178s7qs14bdmjo].[Action (Quality)]'>
+            <groupfilter function='level-members' level='[quality]' user:ui-action-filter='[Action1_6118131718894998B307D2D39CD0AEEB]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.11sbph814vsaig178s7qs14bdmjo].[Action (Quality)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Sulphates (compartimento):qk]' scope='cols' value='Sulphates' />
+            <format attr='display' class='0' field='[federated.11sbph814vsaig178s7qs14bdmjo].[pcto:cnt:sulphates:qk]' scope='rows' value='false' />
+            <format attr='height' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Sulphates (compartimento):qk]' value='36' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Sulphates (compartimento):qk]' value='8' />
+            <format attr='color' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Sulphates (compartimento):qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+          </pane>
+        </panes>
+        <rows>[federated.11sbph814vsaig178s7qs14bdmjo].[pcto:cnt:sulphates:qk]</rows>
+        <cols>[federated.11sbph814vsaig178s7qs14bdmjo].[none:Sulphates (compartimento):qk]</cols>
+        <show-full-range>
+          <column>[federated.11sbph814vsaig178s7qs14bdmjo].[Sulphates (compartimento)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{4222E8C5-32B5-416C-97E7-2C149163DE3C}' />
+    </worksheet>
+    <worksheet name='Total Sulfur Dioxide Density Plot'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='winequality-red' name='federated.11sbph814vsaig178s7qs14bdmjo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11sbph814vsaig178s7qs14bdmjo'>
+            <column aggregation='None' datatype='integer' name='[Total Sulfur Dioxide (compartimento)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='1' formula='[total sulfur dioxide]' peg='0' size='15.3' />
+            </column>
+            <column-instance column='[Total Sulfur Dioxide (compartimento)]' derivation='None' name='[none:Total Sulfur Dioxide (compartimento):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total sulfur dioxide]' derivation='Count' name='[pcto:cnt:total sulfur dioxide:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Quality' datatype='string' name='[quality]' role='dimension' type='nominal' />
+            <column caption='Total Sulfur Dioxide' datatype='real' name='[total sulfur dioxide]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11sbph814vsaig178s7qs14bdmjo].[Action (Quality)]'>
+            <groupfilter function='level-members' level='[quality]' user:ui-action-filter='[Action1_6118131718894998B307D2D39CD0AEEB]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.11sbph814vsaig178s7qs14bdmjo].[Action (Quality)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Total Sulfur Dioxide (compartimento):qk]' scope='cols' value='Total Sulfur Dioxide' />
+            <format attr='display' class='0' field='[federated.11sbph814vsaig178s7qs14bdmjo].[pcto:cnt:total sulfur dioxide:qk]' scope='rows' value='false' />
+            <format attr='height' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Total Sulfur Dioxide (compartimento):qk]' value='36' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Total Sulfur Dioxide (compartimento):qk]' value='8' />
+            <format attr='color' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Total Sulfur Dioxide (compartimento):qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+          </pane>
+        </panes>
+        <rows>[federated.11sbph814vsaig178s7qs14bdmjo].[pcto:cnt:total sulfur dioxide:qk]</rows>
+        <cols>[federated.11sbph814vsaig178s7qs14bdmjo].[none:Total Sulfur Dioxide (compartimento):qk]</cols>
+        <show-full-range>
+          <column>[federated.11sbph814vsaig178s7qs14bdmjo].[Total Sulfur Dioxide (compartimento)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{373E7064-4441-45A4-8229-AF1B60D5ADB7}' />
+    </worksheet>
+    <worksheet name='Volatile Acidity Density Plot'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='winequality-red' name='federated.11sbph814vsaig178s7qs14bdmjo' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11sbph814vsaig178s7qs14bdmjo'>
+            <column aggregation='None' datatype='integer' name='[Volatile Acidity (compartimento)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='-2' formula='[volatile acidity]' peg='0' size='0.079' />
+            </column>
+            <column-instance column='[Volatile Acidity (compartimento)]' derivation='None' name='[none:Volatile Acidity (compartimento):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[volatile acidity]' derivation='Count' name='[pcto:cnt:volatile acidity:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Quality' datatype='string' name='[quality]' role='dimension' type='nominal' />
+            <column caption='Volatile Acidity' datatype='real' name='[volatile acidity]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.11sbph814vsaig178s7qs14bdmjo].[Action (Quality)]'>
+            <groupfilter function='level-members' level='[quality]' user:ui-action-filter='[Action1_6118131718894998B307D2D39CD0AEEB]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.11sbph814vsaig178s7qs14bdmjo].[Action (Quality)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Volatile Acidity (compartimento):qk]' scope='cols' value='Volatile Acidity' />
+            <format attr='display' class='0' field='[federated.11sbph814vsaig178s7qs14bdmjo].[pcto:cnt:volatile acidity:qk]' scope='rows' value='false' />
+            <format attr='height' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Volatile Acidity (compartimento):qk]' value='36' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Volatile Acidity (compartimento):qk]' value='8' />
+            <format attr='color' field='[federated.11sbph814vsaig178s7qs14bdmjo].[none:Volatile Acidity (compartimento):qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+          </pane>
+        </panes>
+        <rows>[federated.11sbph814vsaig178s7qs14bdmjo].[pcto:cnt:volatile acidity:qk]</rows>
+        <cols>[federated.11sbph814vsaig178s7qs14bdmjo].[none:Volatile Acidity (compartimento):qk]</cols>
+        <show-full-range>
+          <column>[federated.11sbph814vsaig178s7qs14bdmjo].[Volatile Acidity (compartimento)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{6EE007CB-E202-451C-BCB9-2AB52672123F}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Painel 1'>
+      <style />
+      <size maxheight='900' maxwidth='1600' minheight='900' minwidth='1600' preset-index='8' sizing-mode='fixed' />
+      <zones>
+        <zone h='18556' id='42' param='vert' type-v2='layout-flow' w='24688' x='1625' y='10444'>
+          <zone fixed-size='32' forceUpdate='true' h='3556' id='43' is-fixed='true' type-v2='text' w='24562' x='1688' y='10555'>
+            <formatted-text>
+              <run fontalignment='1' fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12'>Quality</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='0' />
+              <format attr='background-color' value='#555555' />
+            </zone-style>
+          </zone>
+          <zone h='14778' id='41' name='Quality' show-title='false' w='24562' x='1688' y='14111'>
+            <layout-cache minheight='121' type-h='scalable' type-w='fixed' />
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='48111' id='45' param='vert' type-v2='layout-flow' w='98875' x='500' y='50778'>
+          <zone fixed-size='30' h='3333' id='44' is-fixed='true' type-v2='text' w='98749' x='563' y='50889'>
+            <formatted-text>
+              <run fontalignment='1' fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12'>Density Plot</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='0' />
+              <format attr='background-color' value='#555555' />
+            </zone-style>
+          </zone>
+          <zone h='44556' id='31' param='vert' type-v2='layout-flow' w='98749' x='563' y='54222'>
+            <zone h='14778' id='3' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='98749' x='563' y='54444'>
+              <zone h='14778' id='4' name='Alcohol Density Plot' show-title='false' w='24687' x='563' y='54444'>
+                <layout-cache minheight='136' minwidth='100' type-h='scalable' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='2' />
+                </zone-style>
+              </zone>
+              <zone h='14778' id='10' name='Chlorides Density Plot' show-title='false' w='24688' x='25250' y='54444'>
+                <layout-cache minheight='136' minwidth='100' type-h='scalable' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='2' />
+                </zone-style>
+              </zone>
+              <zone h='14778' id='12' name='Citric Acid Density Plot' show-title='false' w='24687' x='49938' y='54444'>
+                <layout-cache minheight='136' minwidth='100' type-h='scalable' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='2' />
+                </zone-style>
+              </zone>
+              <zone h='14778' id='14' name='Density Density Plot' show-title='false' w='24688' x='74625' y='54444'>
+                <layout-cache minheight='136' minwidth='100' type-h='scalable' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='2' />
+                </zone-style>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='0' />
+              </zone-style>
+            </zone>
+            <zone h='14778' id='13' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='98749' x='563' y='69222'>
+              <zone h='14778' id='16' name='Fixed Acidity Density Plot' show-title='false' w='24687' x='563' y='69222'>
+                <layout-cache minheight='139' minwidth='100' type-h='scalable' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='2' />
+                </zone-style>
+              </zone>
+              <zone h='14778' id='18' name='Free Sulfur Dioxide Acidity Density Plot' show-title='false' w='24688' x='25250' y='69222'>
+                <layout-cache minheight='139' minwidth='100' type-h='scalable' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='2' />
+                </zone-style>
+              </zone>
+              <zone h='14778' id='20' name='PH Density Plot' show-title='false' w='24687' x='49938' y='69222'>
+                <layout-cache minheight='139' minwidth='100' type-h='scalable' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='2' />
+                </zone-style>
+              </zone>
+              <zone h='14778' id='22' name='Residual Sugar Density Plot' show-title='false' w='24688' x='74625' y='69222'>
+                <layout-cache minheight='139' minwidth='100' type-h='scalable' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='2' />
+                </zone-style>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='0' />
+              </zone-style>
+            </zone>
+            <zone h='14778' id='24' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='98749' x='563' y='84000'>
+              <zone h='14778' id='25' name='Sulphates Density Plot' show-title='false' w='24687' x='563' y='84000'>
+                <layout-cache minheight='136' minwidth='100' type-h='scalable' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='2' />
+                </zone-style>
+              </zone>
+              <zone h='14778' id='27' name='Total Sulfur Dioxide Density Plot' show-title='false' w='24688' x='25250' y='84000'>
+                <layout-cache minheight='136' minwidth='100' type-h='scalable' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='2' />
+                </zone-style>
+              </zone>
+              <zone h='14778' id='29' name='Volatile Acidity Density Plot' show-title='false' w='24687' x='49938' y='84000'>
+                <layout-cache minheight='136' minwidth='100' type-h='scalable' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='2' />
+                </zone-style>
+              </zone>
+              <zone h='14778' id='32' type-v2='empty' w='24688' x='74625' y='84000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='0' />
+              </zone-style>
+            </zone>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='0' />
+              <format attr='margin-top' value='2' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1800' minheight='1800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='53' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='52' param='vert' type-v2='layout-flow' w='99000' x='500' y='889'>
+                <zone fixed-size='32' forceUpdate='true' h='3556' id='43' type-v2='text' w='24562' x='1688' y='10555'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12'>Quality</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#555555' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='125' h='14778' id='41' is-fixed='true' name='Quality' show-title='false' w='24562' x='1688' y='14111'>
+                  <layout-cache minheight='121' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='30' h='3333' id='44' type-v2='text' w='98749' x='563' y='50889'>
+                  <formatted-text>
+                    <run fontalignment='1' fontcolor='#ffffff' fontname='Tableau Bold' fontsize='12'>Density Plot</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#555555' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='127' h='14778' id='4' is-fixed='true' name='Alcohol Density Plot' show-title='false' w='24687' x='563' y='54444'>
+                  <layout-cache minheight='136' minwidth='100' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='127' h='14778' id='10' is-fixed='true' name='Chlorides Density Plot' show-title='false' w='24688' x='25250' y='54444'>
+                  <layout-cache minheight='136' minwidth='100' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='127' h='14778' id='12' is-fixed='true' name='Citric Acid Density Plot' show-title='false' w='24687' x='49938' y='54444'>
+                  <layout-cache minheight='136' minwidth='100' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='127' h='14778' id='14' is-fixed='true' name='Density Density Plot' show-title='false' w='24688' x='74625' y='54444'>
+                  <layout-cache minheight='136' minwidth='100' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='127' h='14778' id='16' is-fixed='true' name='Fixed Acidity Density Plot' show-title='false' w='24687' x='563' y='69222'>
+                  <layout-cache minheight='139' minwidth='100' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='127' h='14778' id='18' is-fixed='true' name='Free Sulfur Dioxide Acidity Density Plot' show-title='false' w='24688' x='25250' y='69222'>
+                  <layout-cache minheight='139' minwidth='100' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='127' h='14778' id='20' is-fixed='true' name='PH Density Plot' show-title='false' w='24687' x='49938' y='69222'>
+                  <layout-cache minheight='139' minwidth='100' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='127' h='14778' id='22' is-fixed='true' name='Residual Sugar Density Plot' show-title='false' w='24688' x='74625' y='69222'>
+                  <layout-cache minheight='139' minwidth='100' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='127' h='14778' id='25' is-fixed='true' name='Sulphates Density Plot' show-title='false' w='24687' x='563' y='84000'>
+                  <layout-cache minheight='136' minwidth='100' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='127' h='14778' id='27' is-fixed='true' name='Total Sulfur Dioxide Density Plot' show-title='false' w='24688' x='25250' y='84000'>
+                  <layout-cache minheight='136' minwidth='100' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='127' h='14778' id='29' is-fixed='true' name='Volatile Acidity Density Plot' show-title='false' w='24687' x='49938' y='84000'>
+                  <layout-cache minheight='136' minwidth='100' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{ADDB7FF9-EBA6-4F38-81F3-FC6BB2C3584A}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Quality'>
+      <cards>
+        <edge name='left'>
+          <strip size='170'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.11sbph814vsaig178s7qs14bdmjo].[none:quality:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.11sbph814vsaig178s7qs14bdmjo].[none:quality:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{7EDB0B65-A8DE-4315-B040-BBC1FDA6CBB9}' />
+    </window>
+    <window class='worksheet' name='Alcohol Density Plot'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.11sbph814vsaig178s7qs14bdmjo].[none:Alcohol (compartimento):qk]</field>
+            <field>[federated.11sbph814vsaig178s7qs14bdmjo].[none:alcohol:qk]</field>
+            <field>[federated.11sbph814vsaig178s7qs14bdmjo].[none:quality:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F95D029A-E5CF-4019-9BB6-74F54703D4AF}' />
+    </window>
+    <window class='worksheet' name='Chlorides Density Plot'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.11sbph814vsaig178s7qs14bdmjo].[none:chlorides:qk]</field>
+            <field>[federated.11sbph814vsaig178s7qs14bdmjo].[none:quality:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{7C6519F0-F193-4D72-AEE7-2F6FBF3DF516}' />
+    </window>
+    <window class='worksheet' name='Citric Acid Density Plot'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.11sbph814vsaig178s7qs14bdmjo].[none:quality:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{DE84982B-E345-4B2B-9FEB-2279D28B102B}' />
+    </window>
+    <window class='worksheet' name='Density Density Plot'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.11sbph814vsaig178s7qs14bdmjo].[none:density:qk]</field>
+            <field>[federated.11sbph814vsaig178s7qs14bdmjo].[none:quality:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0BB84280-1D54-403A-8FE8-8E838B1069F9}' />
+    </window>
+    <window class='worksheet' name='Fixed Acidity Density Plot'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.11sbph814vsaig178s7qs14bdmjo].[none:density:qk]</field>
+            <field>[federated.11sbph814vsaig178s7qs14bdmjo].[none:quality:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{CF089F48-42D9-4A55-ADBC-DEC17452DDC8}' />
+    </window>
+    <window class='worksheet' name='Free Sulfur Dioxide Acidity Density Plot'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.11sbph814vsaig178s7qs14bdmjo].[none:density:qk]</field>
+            <field>[federated.11sbph814vsaig178s7qs14bdmjo].[none:quality:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BDCFCFE2-45B6-4E6D-A85A-10840548638A}' />
+    </window>
+    <window class='worksheet' name='PH Density Plot'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.11sbph814vsaig178s7qs14bdmjo].[none:density:qk]</field>
+            <field>[federated.11sbph814vsaig178s7qs14bdmjo].[none:quality:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{03EEEEE8-6045-43E8-A3E1-FCDC294A115F}' />
+    </window>
+    <window class='worksheet' name='Residual Sugar Density Plot'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.11sbph814vsaig178s7qs14bdmjo].[none:density:qk]</field>
+            <field>[federated.11sbph814vsaig178s7qs14bdmjo].[none:quality:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2A3CC768-CA86-4EB6-A2A0-9520CE91E953}' />
+    </window>
+    <window class='worksheet' name='Sulphates Density Plot'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.11sbph814vsaig178s7qs14bdmjo].[none:density:qk]</field>
+            <field>[federated.11sbph814vsaig178s7qs14bdmjo].[none:quality:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5C9CC86F-30EF-4083-A61D-917704B2DC8A}' />
+    </window>
+    <window class='worksheet' name='Total Sulfur Dioxide Density Plot'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.11sbph814vsaig178s7qs14bdmjo].[none:density:qk]</field>
+            <field>[federated.11sbph814vsaig178s7qs14bdmjo].[none:quality:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{175DFDA7-4502-486C-B72E-43AF3CC847D8}' />
+    </window>
+    <window class='worksheet' name='Volatile Acidity Density Plot'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.11sbph814vsaig178s7qs14bdmjo].[none:density:qk]</field>
+            <field>[federated.11sbph814vsaig178s7qs14bdmjo].[none:quality:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C82C97C7-AA26-4442-8F0D-4AB796272EB4}' />
+    </window>
+    <window class='worksheet' name='Planilha 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.11sbph814vsaig178s7qs14bdmjo].[none:alcohol:qk]</field>
+            <field>[federated.11sbph814vsaig178s7qs14bdmjo].[none:chlorides:qk]</field>
+            <field>[federated.11sbph814vsaig178s7qs14bdmjo].[none:quality:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0E6523C7-AA6D-42A7-8854-965CF65C0DF1}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Painel 1'>
+      <viewpoints>
+        <viewpoint name='Alcohol Density Plot'>
+          <zoom type='entire-view' />
+          <selection-collection>
+            <node-selection select-tuples='false'>
+              <oriented-node-reference orientation='vertical'>
+                <node-reference>
+                  <axis>[federated.11sbph814vsaig178s7qs14bdmjo].[pcto:cnt:alcohol:qk]</axis>
+                </node-reference>
+                <page-reference />
+              </oriented-node-reference>
+            </node-selection>
+          </selection-collection>
+        </viewpoint>
+        <viewpoint name='Chlorides Density Plot'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Citric Acid Density Plot'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Density Density Plot'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Fixed Acidity Density Plot'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Free Sulfur Dioxide Acidity Density Plot'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='PH Density Plot'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Quality'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Residual Sugar Density Plot'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sulphates Density Plot'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Sulfur Dioxide Density Plot'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Volatile Acidity Density Plot'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{A852C298-88A1-422B-A56E-439AC75D9F35}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Alcohol Density Plot' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Chlorides Density Plot' width='192'>
+      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
+      S9giAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Citric Acid Density Plot' width='192'>
+      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
+      +Z9vNwlGM7Lzd6mjC2zzU8PcXJzh2oVJBgf6JAAv0lozMz7Ebz+8ytRY/VK8ozWfPd7myea+
+      7Pw94qjs4tLcePueEdaJlKrfO/M//rbK6lYKR2u+Xo3Jzt9jlFI4jmYrke/tK8FvqmY7/O+D
+      CE8i+6TyvfcldvE9mQF+gFKKlDzMu+dJAISrSQCEq0kAhKtJAISrSQCEq0kAhKtJAISrSQCE
+      q0kAhKtJAISrSQCEq0kAhKtJAISrSQCEq0kAhKtJAISrSQCEq0kAhKtJAISrSQCEq0kAhKtJ
+      AISrSQCEq0kAhKtJAISrSQCEq0kAhKtJAISrSQCEq0kAhKtJAISrSQCEq0kAhKtJAISrSQCE
+      q0kAhKtJAISrSQCEq0kAhKtJAISrSQCEq0kAhKtJAISrSQCEq0kAhKtJAISrSQCEq0kAhKtJ
+      AISrSQCEq0kAhKtJAISrSQCEq0kAhKtJAISrSQCEq0kAhKtJAISrSQCEq0kAhKtJAISrSQCE
+      q0kAhKtJAISrSQCEq0kAhKtJAISrSQCEq0kAhKtJAISr+Y5+qNkOZs1uZ1+EaDml67BtB4/n
+      5AnBcWw8Hm/TljuLdWqtAY1SvfF6HMfB41GAannb37ff+rHUaLTWeJq4Hev7BihVH8vvAvDi
+      P560gmYudxbrlNcjbZ92nZ6jX8zyARvbe6A14cAahmmwFtyo/5FTY20tCEAqtk36oMTTx48w
+      bX187YQDa1i2pnqYJRJNYpYL5A6rDR0pH6TZiiWf/806pmXw5Nl6w3JOzSDwvB/xnU1yhyVW
+      Hj+m5uiGZWPbGxyUDLRTI5XOkE3GSKQPGpazzQrBcASAbCqBaVmsrDzBPr5O7RBYX8d2NJXD
+      LIWySTGXpWTUGtaZT+2xl8qDdkjuJ7GqRVYDGw3LWdUioc0dANL7CSyzyqOVZzi68fVEQgEq
+      lo1RyrMWipDYjZA9rDQsl4nvkMwV0Y7F48dPKWSShLZiDcuhbdbWAmitSUYj7KXyZJP7WI1L
+      sh/bIn1QRjsWj1aeUS3mCGzsNCxXPcwS2U2gtWb96QqFwgErz4KvaFsTWl/DcjQH6TjBzSi7
+      myEOq42tx3c2yRWr1KpFHj1ZI53YZXsv1bCcbVUJBDfrYxVcJZUvkk7u86oD+ehWmELZxCwX
+      WHkWpJBNEokmvz8JDm7sUsglcXSRUtnh00/+hFkoUAF2Q0GUWSBRcUhkC+xurtLvhVS29FIj
+      lnVAuWwTCEcIb+2RT8VYfRogk002dGhjO04utUe1kqFaqfHpHz9hL5lt6PxWOIxdyZM1aqTz
+      ZdYe/p1QKEwqd3xHsMjkK0TCQSzDIJFOEd3PkNiNNLS9Gd7ALGYpWFDIxMiVbaiZHJbNl5bL
+      pWLUqlW2kjnsco54tsCT+4/IV4oN69yNp0nGIjg1i1hyn8cPviWVyeMcWy4c3qJSSGPYsJ+M
+      sReLEQyFqZjHX3mZQrFGcD2Ag4fSQZZErsBOuHHniqXyxLdD2KaFp1am4HjIZzIcj1Q0HMRj
+      HrJXBl9fP5nkLo+/+IpCwxo1iUyBaCSIbVooo8hf//EN+YPGJUORGPlMHLRmoN/DowcPCYY3
+      GrajYeSoVmoEN7axaxaRjQDZUpXNQOjYkjVSuRLbG0EcxyEe2cT09JFNpRva3gpvUKvkyJka
+      yyyzEQzw6JsHNL7dmmTzVTbDARzHJhrZ4IuvvuYgX/g+AKODXg4rNolEnnx6m+XlZeIHRQaA
+      qelxNuMHVLIJ7GoB5e1jNbiLv//lYy6vd4hMahdtGXh9UDIcKpUDMtnGgRvq15RNTTp9SCoV
+      4/rN2/icWsPATY6PsJsqcphOYpay+IcnGR2fxuc9vnl9GMU0yuthLx4nHAxhVSs4Pn9D2xNj
+      Q8RzFfL7MRJ7cTaDT9mKZfD6Xj7WHB4eJZZMUivlSaQybIaDVK0y2Uzj6/FqExsv0WiU3Y0Q
+      /SNTYFsNO+H4SD/pgkEqGSUZi5JI55gcHUM3zN5+DnNR0A6hQIBSDWrlQ3xDow1tK6uM9vWz
+      HQ4QSebYDYVwVOPx8NT0BOG9PEYuTmB9Fe3YVLRJPpVvWNYxDlF9/WwF19nJHLI4f56a1fhu
+      PTygKBkOe7Ed1tZCjIyPMTE83LAdfb4h0qko2qySL1UZHBmlnEsxND5xfCQxy1mU10tsL8nQ
+      6BCB1XWUz8dxk+PDxNIlCqkYhuHgwaJilCgUysdbp1pMoZSHeDLD8OgQ8+fOY9XM+jnA0WJa
+      awzDwO9v3GkAqtUKfv/gK//v+HID/sETT9m042BYFv6BgVOt8zRt14wKus9Pn+fk48Gmv56a
+      iaG9+PtOPhk7bdtGtULfgB/PCce32qpieAbwe0/3uk/zehyzguX1M3DCOrV2MAwLv/902/E0
+      bdtGBafJ29EyKqg+P74X1vlSAIRwG7kQJlzt/wE9LBDrxUtUbQAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Density Density Plot' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAANBUlEQVR4nO3daVcjV2LG8UelUmkBsbUaN90sbU+ctE9m7HmTnOTdzDfz58kHyMnM5Bw7
+      iZNZut00DQiBFiQhIbTvqr1uXshguY2EQdCA7vN7AxxQcYH7L6qupJJPCCFAJCkFAIQQYAck
+      I+X8Hc/z7nMcRPdCufpLiGYXAyCpMQCSGgMgqTEAkhoDIKkxAJIaAyCpMQCSGgMgqTEAkhoD
+      IKkxAJIaAyCpMQCSGgMgqTEAkhoDIKkxAJIaAyCpMQCSGgMgqTEAkhoDIKkxAJIaAyCpMQCS
+      GgMgqTEAkhoDIKkxAJIaAyCpMQCSGgMgqTEAkhoDIKkxAJIaAyCpMQCSGgMgqTEAkhoDIKkx
+      AJIaAyCpMQCSGgMgqTEAkhoDIKkxAJIaAyCpMQCSGgMgqTEAkhoDIKkxAJIaAyCpMQCSGgMg
+      qTEAkhoDIKkxAJIaAyCpMQCSGgMgqTEAkhoDIKkxAJIaAyCpMQCSGgMgqTEAkhoDIKkxAJIa
+      AyCpMQCSGgMgqTEAkhoDIKkxAJIaAyCpMQCSGgMgqTEAkhoDIKkxAJIaAyCpMQCSGgMgqTEA
+      khoDIKkxAJIaAyCpMQCSGgMgqTEAkhoDIKkxAJIaAyCpMQCSGgMgabmexwBIXsVqlwGQvOK5
+      KgMgORmWg+NSiwGQnFLFBhyX5wAkISEEDnI1+Hw+BkDyafUMnDV6ALgMShI6yNUu3mcAJBXX
+      83BUqMPn8wFgACSZYq2LTt+6+JgBkFTi2SoUxXfxMQMgaZyv/Y9iACSN87X/UQyApDC69j+K
+      AZAURtf+RzEAksLo2v8oBkAz78O1/1EMgGbe6Qdr/6MYAM28/WztJ2v/oxgAzbTh2n9z7OcZ
+      AM20y9b+RzEAmlnj1v5HMQCaWePW/kcxAJpZB/nL1/5HMQCaSa7n4eikMfHwB2AANKOGa//m
+      lV/HAGgmxSes/Y9iADRzDMvB8dn4tf9RDIBmTrrYgO2MX/sfxQBopgghcJCfvPY/igHQTGn1
+      TJTqk9f+RzEAmimJfPVaX88AaGaYtoNE/vLH/Y+j3uF4iD4KIQRy5Ta+fZdDT7cYAMmjb9j4
+      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
+      AElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Fixed Acidity Density Plot' width='192'>
+      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
+      RK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Free Sulfur Dioxide Acidity Density Plot' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='PH Density Plot' width='192'>
+      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
+      SGn/B6pcY2fUgjlWAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Painel 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Planilha 5' width='192'>
+      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
+      TkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Quality' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAEoElEQVR4nO3bT0tsdQDG8eec0VHLf1wnEHTVSUhw5VYkLkKr4LbohbRr3aZ2vYToPfQG
+      isEWQnNxISlByXgd9I7DDN6sODrn18KSW+g1y/F37jzfz0rhwDz84Ms5M45JCCEIMJVKUghB
+      dABH6V8/FEURcwcQRXr7JcDwIgBYIwBYIwBYIwBYIwBYIwBYIwBYIwDYOjg4IAD42t7eVhIu
+      qSgKVSqV2JuABzUSewBwnXB+rt9/2B346xAASqn/4oXan30+8NfhPQCsEQCsEQCsEQCsEQCs
+      EQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCs
+      EQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCs
+      EQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCs
+      EQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCs
+      EQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCs
+      EQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCs
+      EQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCs
+      EQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCsEQCs
+      EQCsEQCsEQCsEQCsEQCsjcQegPuxv7+vXq+nlZUV1et1ZVmmoih0fHysLMtUq9ViTywl7gBD
+      YnJyUp1OR5VKRZJUrVZ1dnamVquler2uZrMZeWE5cQcYEt1uV7Ozs9rZ2bn6/fDwUOvr6zo5
+      OdH4+HjkheVEAENiaWlJIQRJUpIkkqTl5WVJ4vHnFQjgAfz29ce6+Onb2DMGbiR7rIkPvog9
+      404I4CEUfak4j71i8IqL2AvujDfBsEYAsEYAsEYAsEYAsFa6T4HyPNfm5qbW1tbUbDaVJIla
+      rZampqY0MzOjubk5TU9Px56JIVG6O0C73dbCwoJarZb29vbU6XQ0Ojqqo6MjbW1tqdFoxJ6I
+      IVK6O0CtVtPu7q7m5+eVZZnyPFev19Pq6qryPFe73Y49EUOkdAGMjY1pY2NDIYSrP+m/bHFx
+      McIqDKs7BfD0xyN9+tU3A5pSLl9+8kSPpidiz8CA3fEOEPTn962AoXAVQFEUt1781swb+ui9
+      dwc6qCyqI6n6/f4rr7npMe2fknfeV2Vu6b6mlVb66O1bz0z6d+cWqlVNfvjkvqbdKAmXFEJQ
+      mpbuQ6FSK4qCM/sPynRuqXT5/fGyDPqb0Fdj6zv9fHAce8m1SnlmkhSCnja+j73iRmU6t/Is
+      uVaq6Tcn1Ds9jT3ktdJ9/kzPTrqxZ7wWSh1AKC7UPf1F6e2P2XhJnp/rrNtW71eD/0H4n/4A
+      72vjWa+0AzIAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Residual Sugar Density Plot' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAQrUlEQVR4nO2d6Y8cx3mHf1U9JJdc7pLLJSWKoiRbiY3YSBzDsGPFgPMl8D8WBLGDGDmQ
+      L4ETAwIsJxYcxZYpU2Qk0VJoUSIpUJTo5fLYg3vMPdMzPUfPTE93VT4MZ7mkdrnTO0fX8T4A
+      sTy2hzWz9XTX8b5vMSmlBEFYCgcAKSXIA8JGeP83Qogk20EQicD3/haCMBcSgLAaEoCwGhKA
+      sBoSgLAaEoCwGhKAsBprBXBrLXTDKOlmEAljrQC//8MGSl4r6WYQCWOlAEJI5N0Gcm496aYQ
+      CWOlAOWaj3orwEaRBLAdKwVYzVaR4hxlz6cgQMuxTgApJVZzVXDO4DU78DvdpJtEJIh1AgRh
+      hEKlCaAnQ6HiJ9wiIkmsE2CzWEckesOelMORKdM8wGasE2AtX4XDGQCAMYZsuZFwi4gksUoA
+      ISVWs1Uwxrb+ruz5EIImwrZilQD1Zge1Zuexv2u2u6g22gm1iEgaqwRYzVXh8MffMucM+YeT
+      YsI+rBLgwcPlz+2kHI50iSbCtmKNAN0wQmaXCW++0qANMUuxRoB8pYlOEO74b73IUKqKYSPW
+      CLCcriDl7Px2u5GAW6fIUBuxQgApJdYL3mPLn9tJcY6cS/sBNmKFAH67+9Q7POcM64XaBFtE
+      qIIVAjzIecAec9wSRYZaiRUCrOWrcHYZ//ep+x20dpkkE+ZivABhJAYa3gght6JECXswXgC3
+      1oLf3jvmP+VwbBZpHmAbxguwkq0gldr7bTJGIRE2YrQAUkqs5z3wXZY/n8SttSgy1DKMFqAd
+      hMi5g9/V636Amt/Z+xsJYzBagEy5DhFjaZNzRhtilmG0AEubla3sr0FIOZwyxCzDWAGEkNgs
+      1XYNf9gNegLYhbECVJtt1P0g9nVUM9QujBWgl/sb/7ogjFCuUWSoLRgpgJQSD3ZIfxwEh3Pk
+      aRhkDUYK0A3FvieznLNdM8cI8zBSgFylMdQ4PudSiqQtGCnA07K/BqHmd9CmyFArME4AKSXS
+      +1j+3I4QEsUq1Qy1AeMEqPvB0J2Xaobag3ECrBcGD37bDcYYMlQryAqME2AlU9kz+2sQShQZ
+      agVGCRBGYmRLmI1WgEY7/k4yoRdGCVCs+miN6MQXTsMgKzBKgNXscMuf23E4nR1gA8YI0D/7
+      a5jlz+30UiRJANMxRoBWEKLkjXbtvkyRocZjjACbhRpGHb3QCSK4dTo8w2SMEWAlM7rxfx/H
+      YcjRhpjRGCGAEBLpMXRUh3NkKTTaaIwQwK234DXGU80hW6bIUJMxQoDVbHXkw58+tSZFhpqM
+      9gL0s7+ePPtrVAgpUfIoRdJUtBegG4qxljR0HI50iWqGmor2AmyWamNdq6eQCLPRXoC1nDe2
+      8X+fUq2FiCJDjURrAYQYbfjDbvjt7kAl1gn90FqAeiuA15jMTi1liJmJ1gKMc/VnOw6neYCp
+      aC/AfopfxYUxhmKVDs8wEW0F6IbRRO/KJY9OkzcRbQUoVv2JnurYDkJ4TYoMNQ1tBVjKuDgw
+      5uXP7TgOQ5rmAcahpQC9s7+GK34VFyqaayZaCtDqhHATKGGec5sUGWoYWgrwIFeNdfbXqKg2
+      Wuh0KUXSJLQUYC0//vCHnYiEHHneMZEs2gkQRQLrBS+R/7sXGUoTYZPQTgC33kKzlUxcDmcM
+      BTpN3ii0E2A5U0EqlVyzs+UGRYYahFYCSCmxUagNXf15GPxOd2TlF4nk0UqAdhApUa6QzhI2
+      B60EyJbriESy8TgOpx1hk9BKgKWMm8jy53YYY8i7NBE2BW0EEEJis1ifaPjDbpQ8H2FEkaEm
+      oI0ANb+DWnM8xa/i0g5C1Hw12kIMhzYCrGYrUODmD6A3D9goUKkUE9BCACklVrOTyf4aBMeh
+      yFBTUKNH7UE3Ekosf24nX6HIUBPQQoC820RHsYMqKvU2RYYagBYCLE84+2sQwkigTJGh2qNW
+      r9oBKSXSiix/bieVoshQE1BegEYrQEHBkiScsbEW5SUmg/ICrBcmm/sbh6zboNPkNUd5AcZx
+      9teoaLYC+BQZqjVq9qyHRJFQuiQhowQZ7VFagELVV/oO63CGjSLtCOuM0gLcXS8pO/wBek+A
+      jUKNNsQ0RtneJeRkav8Pi9doU81QjVFWgEYrQHVCtf+HodONUKnTIXq6oqwAD7KTqf0/LCmH
+      Y1PhiTrxdNQVYEK1/4eFc4YsnR6jLUr2sG4YaRVmUPJaNBHWFCUFKHk+Wh19TmevNtpatZd4
+      hJICLKUrOJBg8au4SCmVjFci9ka5XialxHrBU375czspqhmqLcoJ0ApClD29lhV7pVLUylgj
+      BkM5AdZyXiK1/4el6PmJF+0i4qOcAA9yVaXDH3aj2eqi1gySbgYRE6V6WiSSq/0/LJwzFCo0
+      DNINpQSo1NuJ1f4fFtoR1hOlBFhOJ1v7f1jydIiedijT26SU2Ch6idb+Hxa33qKaoZqhjACd
+      boRMSe8xdNCN4NbVj2AlHqGMACrU/h+WlMMpME4zlBFgKa1u8vugcM6wSSmSWqFEjxNSYrOo
+      bvmTOFBkqF4oIUC92UG1YUa9/WqjjXZAkaG6oIQAK9kqNMh9GQiKDNWLxLudfJj8rkP21yCk
+      HI7NIk2EdSHxXhdGwqiVE0Y1Q7UicQHylSY6gVl19ktVn2qGakLiAiylXa2yvwah3urQIXqa
+      kGjPi4TAWk6v7K9BcDhHniJDtSBRAR5kq3ANLCqVcrj2YR22kJgAQkpcXczgQMpJqgljJes2
+      aENMAxITYCPvGT1McGsUGaoDiQggpcTVxbSxd3+gFxmqQ21T20lEgHSpbnwZkZTDkVHsbGPi
+      i0xcgP7dX/fIz72gyFA9mHgvzFeaWM+bt/S5E8WqTxNhxZmoAFJKXLPg7t/Ha9Jp8qoz0Z5Y
+      rrWwnFH/1JdRIYREkSJDlWZiAkgp8fHtTaQcOzo/QJGhOjAxAaqNDpYzFWvu/kA/MpRWglRm
+      IgL0Vn42tS55sl+KFBmqNBMRoN4KcG/Dteru36fuB2i29ax2ZwNjF6C38pOBhX0fQG8/IGNQ
+      wo9pjF2AVifE4lrRyrs/QLWCVGfsAly/m4HtI+C8S0uhqjJWAdpBiFsrBSsnv9sp13yKDFWU
+      sQpw415Wy9NeRk07iFChmqFKMjYBgm6Em0t56+/+QD8ylOYBKjI2AW4u5dCNKA4G6K0E5egQ
+      PSUZiwDdMMKn93PGFLsaBdkypUiqyFh66MKDItXHfAKv2UZAkaHKMXIBokjg+p0MHEtCngdF
+      CImi5yfdDOIJRt5LF9dL8Gnr/wukHI40RYYqx0gFiITAtUW6++8EYwxZlwRQjZH21PubLpUE
+      fAoUGaoeIxNAiF7Qmy3pjvuh7gdodWh4qBIj662ruSrKNZrkPQ3GQIdpK8ZIBLCh0NUooMhQ
+      9RiJAOt5D3na6dwTOjxDPYYWQBpe5HbUlD2qGaoSQwuQKdeRLlEFtEFpBV2qGaoQQwkgpcRH
+      CzT2j0PK4VjJVCguSBGGEqBQ9bFR8EbVFitwOMeVhU389uMl+LQkmjhM9oAQAo4z+J1cSolz
+      V+5hzZI6n6NGSgmHc3z/Gy/iT798ij7DhNj3E6BSb1tX6GqUMMYgpMR7N1bxy/dvw62Zd1SU
+      DuzrCSClxPmrS1ghAUaClBJSAt/5kzP4i6+doTyKCbKvT7rW7OD+pp2FrsYBYwycM1y7k8bP
+      Ln5O5wpMkNhPACklLl5fJgHGhJQSkZD4+ksn8Vd//hKmDqaSbpLRxH4CNNtd3F0vU+cfE4wx
+      pByOuxtlvHrhM9xZL9GS6RiJJUD/gAvOqfOPG8YYwkjgwrVl/OryHdSaFGY+DmINgVqdLv79
+      rU9JgAnTfwK88vXn8a2vPkeT5BES65O8fsfeIrdJwhgDYwxXFjbxn+/+gUqsjJCBBeh0Q3y+
+      UqCxf4I4nKPaaOP1Swu4dGMV3ZCqTAzLwEOgKwsb+ORuliq9KYIQElMHHfz1t76Ml8/M0Y1p
+      nwz0BOiGEW7cy1HnVwjOGYJQ4NyVezj30T00WkHSTdKSgQS4uZRHJCiGXUVSKQdrOQ+vXriJ
+      m0s5WjKNyZ5DoG4Y4T/Of4ooog9WdcJI4Nm5afzg2y/j5LEjSTdHC/Z8AtxeKyEIaLKlAymH
+      o+T5eO2dW7j8+Tplng3AU58AQkj89PyndNq5hgghMT11AD/4zst44dQsTZJ34alPgIUHRSpz
+      qCmcM/idLt74YBHnry5RseJd2PUJIITEqxc+o6wlA5BSwnE4vv9nL+ArZ+cpwG4buwpwZ72E
+      C9eWqdKbQURCIIokjh09hNNzR/HsiWmcPTWL+dnD1uZ17yiAkBKvvXOLArAMpr9c2g0FOGc4
+      dfwInjk+jdMnjuL5kzM4MXs44RZOhh0FWM5U8JsP71p7V7CVfmZaN4xw6KCD0yeO4tTxaTw3
+      fxRnT87iyNSBpJs4cr4ggJQS//XeAtw65ajaTv8pIYREGAnMHDmEZ+em8czcNF54ZhbPzk1r
+      f5P8ggDreQ9v/N+i9m+MGA99Kfp7DCdmDuPU3DSeO3EUZ0/NYP7YEa1CZh4TgHOOX75/G4Uq
+      VXkmBkdKCQkgDAVSKY752cM4PXcUZ07O4PlTM5g9cuip1wshexP0/tfo0dduFKEbCUSRQDcU
+      CKPer0gIhA+/r/dniSh69BrdUEAICQmJI1MHcHx6CjNHDmF+9jBmpw9trYQ9JkCu4uP13y3g
+      IN39iSGRUkJIiSiSmDqUwszhg9s6+KPOGwm5dWhIT6PHYWBg7GHhgIdf9+LJ7+k/taTE1tG9
+      hw6kMHPk4OMC/PrDe8iWKdmCsIetRf5itYm1HJU5JOxiS4CPF9M4kKJNL8IutvbE635AQW+E
+      dWzNAbrdEGyIag/9VaSkrlehDVJKMDBgiFXApN+DCT8HPFyVGmjC3BdASkkf/AgEAAb74MfV
+      hqSvV6ENcX4OTFIOHWExW5otL36ON99+F1IKvHvhN/hscXmgF7i/cBPnLl4CZIh//Ye/w0q2
+      EqsBUdDE+7+/CgC4evkSPrx+M9b1AHBn4RrSuQYq2bv4+3/8N3RiTmVymyt4639/h7Dp4e3f
+      vol7G6V4LxB28P7Fc1jKefjg7Tfw63c+jHc9gLf/5+f4+NZ9bCzdxpvnLyII42VzVbPL+Jef
+      /AxCSvzkn3+EO2uFWNdLGeEXr/83AOCTjz7ABx99Eut6AEiv3sbla7fQqa3jb/72n9CKmYJw
+      4/JFvParixBBCxfPv4nby+l4LxD5+PEPf4h0uYGrl97CL869t+clWwJIKcEYQ61WB8Pgw1gJ
+      AIyhWmvgu3/5XdS9eAKE3QCba6vYyJd32AYZjGbdw8rqKtpiCt/46mk0O/E6Tym7AWdqGl69
+      tq/xuwg72Ch4SIk2zv7R1zDlxF9MeO7sSxB+FTU/wH6qjwl+CGeeOY6qV8O3X/kemjU31vXN
+      QhqNVhvLG3kAvQ2oeEhk0jm4xSK8JsMr33wRVT/e53DmS3+M2cMOvFptX8NIIVP43ivfRLGQ
+      w6kXv4KZqRhDoP5IqFwuY35+vvePAzSid51EuVzB/PwcABar8f35h+u6sf7fx19DIGg30YlS
+      ODo91aukFut6CSlDuJUm5k8ci92G/nuoui6Ozc+D7/M9+DUP/PAMpg44wH7eAwC3XMb8/AnE
+      /Tn0XyPuz/+JV0AUtlFrRDg2Ow3G478HQKBc9h72pfg/B0gJr+Li6Nw8nAF2jmkOQFgN7XwR
+      VkMCEFbz/1QrVkjwp6qZAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Sulphates Density Plot' width='192'>
+      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
+      YII=
+    </thumbnail>
+    <thumbnail height='192' name='Total Sulfur Dioxide Density Plot' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Volatile Acidity Density Plot' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
