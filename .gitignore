@@ -1,5 +1,6 @@
-venv
+venv*
 tabpy*
 API_KEY*
 __pycache__
 __*
+.vscode
